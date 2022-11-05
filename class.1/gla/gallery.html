@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .imgStyle
+        {
+            height: 100px;
+            width:100px;
+            border:3px solid grey;
+        }
+    </style>
+</head>
+<body>
+  <img height="540px" width="540px" style="border: 3px solid grey"
+      src="/gla\banner ..jpeg" id="mainlmage" />
+      <br/>
+      <div id ="myDiv" onclick="changeImage(event)">
+        <img class="imgStyle" src="/img.2\img-1.jpg"/>
+        <img class="imgStyle" src="/gla\pic-1 .jpg"/>
+        <img class="imgStyle" src="/gla\pic-3.jpg"/>
+        <img class="imgStyle" src="/img.2\img-2.jpg"/>
+        <img class="imgStyle" src="/gla\barber-img.jpg"/>
+      </div>
+
+
+      <script type="text/javascript">
+        var images = document.getElementById("myDiv").getElementsByTagName("img");
+        for(var i =0; i < images.length; i++){
+            images[i].onmouseover = function(){
+                this.style.cursor = "hand";
+                this.style.borderColor  = 'red';
+            }
+
+            images[i].onmouseout = function(){
+                this.style.cursor = "pointer";
+                this.style.borderColor  = 'green';
+            }
+        }
+
+
+
+        function changeImage(event) 
+        {
+          event = event || window.event;
+
+          var targetElement = event.target || event.srcElement;
+          if (targetElement.tagName == "IMG")
+          {
+            document.getElementById("mainlmage").src = targetElement.getAttribute("src");
+
+
+          }
+
+        }
+      </script>
+    
+</body>
+</html>

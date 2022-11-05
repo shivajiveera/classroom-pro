@@ -1,0 +1,32 @@
+<!-- The following code displays current date and time in the div tag. -->
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+<!-- SET timeout Event -->
+<div id="timeDiv" ></div> 
+ <input type="submit" onclick="getCurrentDateTime()">
+    <button onclick="myfunc()">clear</button>
+</div>
+</body>
+
+
+<script type="text/javascript">
+
+
+    function getCurrentDateTime()
+    {setInterval(getCurrentDateTime, 1000);
+    document.getElementById("timeDiv").innerHTML = new Date();
+    }
+   
+    function myfunc(){
+       document.getElementById("timeDiv").style.display="none";
+    }
+   
+   </script>
+</html>
+
+
+

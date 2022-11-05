@@ -1,0 +1,12 @@
+html{
+    width: 25%;
+    background-color:pink;
+}
+p{
+    color: yellowgreen;
+    font-size: 30px;
+    border:dotted red;
+}
+.arti{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

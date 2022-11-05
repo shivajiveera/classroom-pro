@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="form validation.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#su').click(function() {
+                $('#maindiv').slideUp(2000);
+            });
+
+            $('#sd').click(function(){
+                $('#maindiv').slideDown(2000);
+
+            });
+
+            $('#st').click(function(){
+                $('#maindiv').slideToggle(2000);
+
+            });
+
+            $('#susd').click(function(){
+                $('#title').slideUp(1000, function(){
+                    $('#title').slideDown(2000);
+
+                });
+
+            });
+
+
+        });
+
+
+    </script>
+    <style>
+      #maindiv{
+            margin-top:20px ;
+            margin-left:150px;
+            margin-right: 150px;
+            border:2px solid green;
+      }
+      
+        #title{
+            text-align: center;
+            padding: 20px;
+            background-color:pink;
+            color:white;
+            margin-top: opx;
+        }
+        form{
+            padding: 20px;
+            background-color: beige;
+        }
+        #btnDiv{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">JITTE VEERASHIVAJJI</h1>
+    <div id="maindiv">
+        
+    <h2 id="sh">SCHOOL</h2>
+    <p class="tcw">The word school derives from Greek σχολή (scholē), originally meaning "leisure" and also "that in which leisure is employed", but later "a group to whom lectures were given, school"</p>
+       <p>A school is an educational institution designed to provide learning spaces and learning environments for the teaching of students under the direction of teachers.</p> 
+        <p class="tcw">Most countries have systems of formal education, which is sometimes compulsory</p>
+       <br>
+       <form>
+        Name:<br><input type="text" value="">
+        <br><br>
+        Surnname:<br><input type="text" value=""><br><br>
+        <input type="submit" value="click me">
+    </form>
+   
+    </div>
+    <br>
+    <div id="btnDiv">
+        <input id="su" type="button" value="slide Up">
+        <input id="sd" type="button" value="slide Down">
+        <input id="st" type="button" value="slidetoggle">
+        <input id="susd" type="button" value="slideup and down">
+    </div>
+
+</body>
+</html>

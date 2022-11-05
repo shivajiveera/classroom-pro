@@ -1,0 +1,30 @@
+
+     //Terms and conditions check
+     function setError(input,message){
+         let parent = input.parentElement;
+         let small = parent.querySelector('small')
+         small.innerText = message
+         parent.classList.add('error')
+         parent.classList.remove('success')
+     }
+     function setSuccesss(input){
+         let parent = input.parentElement;
+         parent.classList.add('success')
+         parent.classList.remove('error')
+     }
+ 
+ 
+     function emailCheck(input){
+         let emailReg = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+         let valid = emailReg.test(input)       
+         return valid
+     }
+ 
+ 
+     if(!tandc.checked){
+          
+         setError(tc,'click on agree terms checkbox')        
+     }
+     else{
+         setSuccesss(tc)
+     }

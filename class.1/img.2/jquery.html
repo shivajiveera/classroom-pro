@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+       
+//$(document).ready(function(){
+  //$("button").click(function(){ 
+    //alert("welcome to jquery.js");
+  //});
+//});
+
+//$(document).ready(function(){
+//$("#p1").mouseup(function(){
+  //  alert("mouse up over p1?");
+  //  $("#p1").mouseout(function(){
+    //alert("mouse out over p1?");
+
+//});
+//});
+
+$(document).ready(function(){
+    $("#div1").html("Height="+ $('#img-1').height()
+    +"<br/>"+"width ="+$('#img-1').width())
+});
+
+
+    </script>
+</head>
+<body>
+    <div id ="div1">
+
+    </div>
+    <img src="/img.2\img-1.jpg" id = "img-1"/>
+    <button>Click me*</button>
+    <p id="p1"> click here</p>
+</body>
+</html>

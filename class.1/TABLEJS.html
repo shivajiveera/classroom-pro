@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Question 1 </title>
+
+<style>
+.table {
+border-collapse: collapse;
+margin: 10px;
+/* padding: 100px; */
+color: red;
+background-color: antiquewhite;
+
+}
+
+#k {
+padding: 20px;
+}
+
+#kk {
+padding: 20px;
+}
+
+#kk {
+padding: 20px;
+}
+
+#a {
+padding: 20px;
+}
+
+#aa {
+padding: 20px;
+}
+
+#b {
+padding: 20px;
+}
+
+#bb {
+padding: 20px;
+}
+</style>
+</head>
+
+<body>
+<table class="table">
+<tr>
+<th id="k"></th>
+<th id="kk"></th>
+<th id="kkk"></th>
+</tr>
+
+<tr>
+<th onclick="a()">Arjun</th>
+<td id="a"></td>
+<td id="aa"></td>
+</tr>
+
+<tr>
+<th onclick="b()">Jossan</th>
+<td id="b"></td>
+<td id="bb"></td>
+</tr>
+
+
+</table>
+
+<script>
+
+var Section = {
+x: "Section",
+y: "Group"
+}
+
+var Arjun = {
+section: "K20YK",
+group: "B",
+}
+
+var Jossan = {
+section: "K20PG",
+group: "A",
+}
+
+// function jk()
+// {
+// document.getElementById("k").innerHTML = Section.x;
+// document.getElementById("kk").innerHTML = Section.y;
+// }
+
+function a() {
+document.getElementById("k").innerHTML = "Name";
+document.getElementById("kk").innerHTML = "Section";
+document.getElementById("kkk").innerHTML = "Group";
+document.getElementById("a").innerHTML = Arjun.section;
+document.getElementById("aa").innerHTML = Arjun.group;
+}
+
+function b() {
+document.getElementById("k").innerHTML = "Name";
+document.getElementById("kk").innerHTML = "Section";
+document.getElementById("kkk").innerHTML = "Group";
+document.getElementById("b").innerHTML = Jossan.section;
+document.getElementById("bb").innerHTML = Jossan.group;
+}
+
+
+</script>
+</body>
+
+</html>

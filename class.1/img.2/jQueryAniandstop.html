@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="form validation.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $('#astart').click(function() {
+                $('#smalldiv').animate({marginLeft:'200px'}, 2000, function(){
+                    $('#jtext').animate({fontSize: '2em'}, 2000);
+                });
+                
+                
+            });
+        });
+
+
+    </script>
+    <style>
+      #maindiv{
+            margin-top:20px ;
+            margin-left:150px;
+            margin-right: 150px;
+            border:2px solid green;
+      }
+      
+        #title{
+            text-align: center;
+            padding: 20px;
+            background-color:pink;
+            color:white;
+            margin-top: opx;
+        }
+        form{
+            padding: 20px;
+            background-color: beige;
+        }
+        #smalldiv{
+            width: 200px;
+            height: 150px;
+            margin:20px;
+            padding:10px;
+            background-color: antiquewhite;
+           border: solid 1px black;
+
+        }
+        #btnDiv{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">JITTE VEERASHIVAJJI</h1>
+    <div id="maindiv">
+        
+     <h2 id="sh">SCHOOL</h2>
+     <p class="tcw">The word school derives from Greek σχολή (scholē), originally meaning "leisure" and also "that in which leisure is employed", but later "a group to whom lectures were given, school"</p>
+       <p>A school is an educational institution designed to provide learning spaces and learning environments for the teaching of students under the direction of teachers.</p> 
+        <p class="tcw">Most countries have systems of formal education, which is sometimes compulsory</p>
+       <div id="smalldiv"><span id="jtext">veersshivaji</span></div>
+    </div>
+    <br><br>
+    <div id="btnDiv">
+       <input type="button" id="astart" value="start">
+    </div>
+
+</body>
+</html>

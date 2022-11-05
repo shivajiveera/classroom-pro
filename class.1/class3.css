@@ -1,0 +1,53 @@
+ /*  *{
+    margin:0 ;
+    padding:0 ;
+    box-sizing: content-box;
+}
+
+h1{
+border: 2px dashed red;
+width: ;
+text-decoration:underline;
+border-radius: 2px;
+
+}
+.container{
+    border: 2px solid red;
+    outline: 5px sienna;
+    margin: 1em 2em 3em 2em;
+    padding: 1em 2em 3em 4em;
+    background-color: aquamarine;
+    border-radius: 10rem;
+    text-align: justify;
+}
+.circle{
+    background-color: blueviolet;
+    width : 100px;
+    height: 100px;
+    outline: 2px;
+    outline-offset: 0.2rem;
+    border:2px solid red;
+    border-radius:50px ;
+    margin: auto;
+    padding: 3px;
+    margin-top: 20px;
+    
+} */
+ body{
+    padding: 25%;
+    font-size: 2rem;
+    color: blue;
+
+ }
+
+ p{
+    text-decoration:none;
+    text-transform:uppercase;
+    text-align: justify;
+    /*text-indent: 1em; */
+    line-height: 1.2;
+    letter-spacing: 0.2;
+    font-weight: 500;
+     font-style: oblique;
+     
+}

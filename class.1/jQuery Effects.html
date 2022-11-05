@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="form validation.js"></script>
+    <script>
+        $(document).ready(function ( ){
+            $('#hidebutton').click(function () {
+                $('p').hide(2000,function(){
+                    $('#sh').hide(1000 , function(){
+                        $('#hidebutton').css('color','green');
+                    });
+                });
+            });
+
+            $('#showbutton').click(function(){
+                $('p').show(2000,function(){
+                    $('#sh').show(1000,function(){
+                        $('#showbutton').css('color','green');
+                    });
+                });
+
+            });
+            $('#toggle').click(function(){
+                $('form').toggle(3000,function(){
+                    $('#toggle').css('color','green');
+                });
+            });
+
+        });
+
+
+
+
+
+    </script>
+    <style>
+        #maindiv{
+            margin-top:20px ;
+            margin-left:150px;
+            margin-right: 150px;
+            border:2px solid green;
+        }
+        #title{
+            text-align: center;
+            padding: 20px;
+            background-color:pink;
+            color:white;
+            margin-top: opx;
+        }
+        form{
+            padding: 20px;
+            background-color: beige;
+        }
+       
+        
+        
+    </style>
+
+</head>
+<body>
+    <div id="maindiv">
+        <h1 id="title">JITTE VEERASHIVAJJI</h1>
+    <h2 id="sh">SCHOOL</h2>
+    <p class="tcw">The word school derives from Greek σχολή (scholē), originally meaning "leisure" and also "that in which leisure is employed", but later "a group to whom lectures were given, school"</p>
+       <p>A school is an educational institution designed to provide learning spaces and learning environments for the teaching of students under the direction of teachers.</p> 
+        <p class="tcw">Most countries have systems of formal education, which is sometimes compulsory</p>
+       <br>
+       <input id="hidebutton" type="button" value="click me to hide">
+       <br>
+       <br>
+       <input id="showbutton" type="button" value="click me to show">
+       <br><br>
+       <input id="toggle" type="button" value="click me to toggle">
+       <br><br>
+
+
+
+
+    <form>
+        Name:<br><input type="text" value="">
+        <br><br>
+        Surnname:<br><input type="text" value=""><br><br>
+        <input type="submit" value="click me">
+    </form>
+ 
+    </div>
+</body>
+</html>
